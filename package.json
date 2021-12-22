@@ -1,0 +1,22 @@
+{
+  "name": "json-placeholder-collections",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run collections/JSONPlaceholdercollection.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SachinJadhav222/json-placeholder-collection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SachinJadhav222/json-placeholder-collection/issues"
+  },
+  "homepage": "https://github.com/SachinJadhav222/json-placeholder-collection#readme",
+  "dependencies": {
+    "newman": "^5.3.0"
+  }
+}

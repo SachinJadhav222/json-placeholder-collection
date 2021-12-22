@@ -1,15 +1,26 @@
-version: 2.1
-orbs:
-  newman: postman/newman@0.0.2
+version: 2
 jobs:
-  newman-collection-run:
-    executor: newman/postman-newman-docker
+  build:
+    docker:
+      - image: circleci/node:14.15.1
+     
+    working_directory: ~/repo
     steps:
       - checkout
-      - newman/newman-run:
-          collection: ./JSONPlaceholder.postman_collection
-workflows:
-  version: 2
-  postman collection:
-    jobs:
-      - newman-collection-run
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # run tests!
+      - run: npm test
