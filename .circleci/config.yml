@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - newman/newman-run:
-          collection: JSONPlaceholdercollection
+         collection: './JSONPlaceholdercollection'
 workflows:
   version: 2
   postman collection:
