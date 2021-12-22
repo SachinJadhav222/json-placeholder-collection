@@ -8,3 +8,8 @@ jobs:
       - checkout
       - newman/newman-run:
           collection: ./JSONPlaceholder.postman_collection
+workflows:
+  version: 2
+  postman collection:
+    jobs:
+      - newman-collection-run
