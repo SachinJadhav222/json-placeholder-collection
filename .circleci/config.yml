@@ -22,5 +22,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
+      # run tests using postman collection JSON file!
       - run: npm test
+
+      # run tests using postman collection URL!
+      - run: npm run test-url

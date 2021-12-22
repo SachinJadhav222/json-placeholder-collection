@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "newman run collections/JSONPlaceholdercollection.json"
+    "test": "newman run collections/JSONPlaceholdercollection.json",
+    "test-url":"newman run https://www.getpostman.com/collections/20b4295729302f267736"
   },
   "repository": {
     "type": "git",
