@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "newman run collections/JSONPlaceholdercollection.json -e env/JSONPlaceholderenvironment.json",
-    "test-url":"newman run https://www.getpostman.com/collections/17036426acfb8633ec90 -e env/JSONPlaceholderenvironment.json"
+    "test": "newman run collections/JSONPlaceholdercollection.json -e env/JSONPlaceholderenvironment.json -r cli,htmlextra --reporter-htmlextra-export ./reports/report.html",
+    "test-url": "newman run https://www.getpostman.com/collections/17036426acfb8633ec90 -e env/JSONPlaceholderenvironment.json",
+    "runner": "node ./runner/newman-runner.js --collection=./collections/JSONPlaceholdercollection.json --environment=./env/JSONPlaceholderenvironment.json"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/SachinJadhav222/json-placeholder-collection#readme",
   "dependencies": {
-    "newman": "^5.3.0"
+    "minimist": "^1.2.5",
+    "newman": "^5.3.0",
+    "newman-reporter-htmlextra": "^1.22.3"
   }
 }
