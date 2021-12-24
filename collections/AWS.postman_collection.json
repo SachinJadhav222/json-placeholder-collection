@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "AWS",
+		"_postman_id": "88f1a5d4-8468-e2a8-3d2b-2451661d7895",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "aws-lambda",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "aws-lambda",
+			"request": {
+				"url": {
+					"raw": "http://www.dneonline.com/calculator.asmx?wsdl",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dneonline",
+						"com"
+					],
+					"path": [
+						"calculator.asmx"
+					],
+					"query": [
+						{
+							"key": "wsdl",
+							"value": "",
+							"equals": false,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope\nxmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelop/\"\nxmlns:tem=\"http://tempuri.org/\">\n\t<soapenv:Header/>\n\t<soapenv:Body>\n\t<tem:Add>\n\t\t<tem:intA>10</tem:intA>\n\t\t\t<tem:intB>20</tem:intB>\n\t</tem:Add>\n\t</soapenv:Body>\n\t\n</soapenv:Envelope>\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "aws-lambda-hello",
+			"request": {
+				"url": {
+					"raw": "https://t77jh2ssmg.execute-api.eu-west-2.amazonaws.com/test/helloworld?name=SACHIN&city=LONDON",
+					"protocol": "https",
+					"host": [
+						"t77jh2ssmg",
+						"execute-api",
+						"eu-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test",
+						"helloworld"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "SACHIN",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "city",
+							"value": "LONDON",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"employee_id\":\"301\",\n\t\"Name\": \"Reyaansh Jadhav\",\n\t\"Country\": \"INDIA-UK\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

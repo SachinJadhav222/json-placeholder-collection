@@ -1,0 +1,33 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WeatherAPI",
+		"_postman_id": "6502df32-f2a8-e089-18b7-5f477b82a268",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-hyderabad",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "01.Get-HB",
+			"request": {
+				"url": "http://restapi.demoqa.com/utilities/weatherfull/city/Hyderabad",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,416 @@
+{
+	"variables": [],
+	"info": {
+		"name": "JSON Placeholder",
+		"_postman_id": "6b436788-b6ff-86e0-2c5e-9d6cb4ba8b6a",
+		"description": "Fake Online REST API for Testing and Prototyping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "albums",
+			"description": "Folder for albums",
+			"item": [
+				{
+					"name": "Get all available albums",
+					"request": {
+						"url": "https://jsonplaceholder.typicode.com/albums?id={{id}}&userId={{userId}}",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get specific album",
+					"request": {
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/albums/:id",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"albums",
+								":id"
+							],
+							"query": [],
+							"variable": [
+								{
+									"value": "{{id}}",
+									"id": "id"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get photos for a specific album",
+					"request": {
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/albums/:id/photos",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"albums",
+								":id",
+								"photos"
+							],
+							"query": [],
+							"variable": [
+								{
+									"value": "{{id}}",
+									"id": "id"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"description": "Folder for comments",
+			"item": [
+				{
+					"name": "Get all available comments",
+					"request": {
+						"url": "https://jsonplaceholder.typicode.com/comments?id={{id}}&postId={{postId}}",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get specific comment",
+					"request": {
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/comments/:id",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"comments",
+								":id"
+							],
+							"query": [],
+							"variable": [
+								{
+									"value": "{{id}}",
+									"id": "id"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "photos",
+			"description": "Folder for photos",
+			"item": [
+				{
+					"name": "Get all available photos",
+					"request": {
+						"url": "https://jsonplaceholder.typicode.com/photos?id={{id}}&albumId={{albumId}}",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get specific photo",
+					"request": {
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/photos/:id",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"photos",
+								":id"
+							],
+							"query": [],
+							"variable": [
+								{
+									"value": "{{id}}",
+									"id": "id"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"description": "Folder for posts",
+			"item": [
+				{
+					"name": "Get all available posts",
+					"request": {
+						"url": "https://jsonplaceholder.typicode.com/posts?id={{id}}&userId={{userId}}",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get specific post",
+					"request": {
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts/:id",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts",
+								":id"
+							],
+							"query": [],
+							"variable": [
+								{
+									"value": "{{id}}",
+									"id": "id"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get comments for a specific post",
+					"request": {
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts/:id/comments",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts",
+								":id",
+								"comments"
+							],
+							"query": [],
+							"variable": [
+								{
+									"value": "{{id}}",
+									"id": "id"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "todos",
+			"description": "Folder for todos",
+			"item": [
+				{
+					"name": "Get all available todos",
+					"request": {
+						"url": "https://jsonplaceholder.typicode.com/todos?id={{id}}&userId={{userId}}",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get specific todo",
+					"request": {
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/todos/:id",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"todos",
+								":id"
+							],
+							"query": [],
+							"variable": [
+								{
+									"value": "{{id}}",
+									"id": "id"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"description": "Folder for users",
+			"item": [
+				{
+					"name": "Get all available users",
+					"request": {
+						"url": "https://jsonplaceholder.typicode.com/users?id={{id}}&email={{email}}",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get specific user",
+					"request": {
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/users/:id",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"users",
+								":id"
+							],
+							"query": [],
+							"variable": [
+								{
+									"value": "{{id}}",
+									"id": "id"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "04-get-user",
+			"request": {
+				"url": "http://localhost:5002/api/members/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n       \n        \"title\": \"sac1231\",\n        \"body\": \"sac-body2\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

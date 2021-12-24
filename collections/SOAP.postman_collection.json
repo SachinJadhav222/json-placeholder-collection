@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SOAP",
+		"_postman_id": "92dc45fc-52bb-3270-ab5d-6bdc67b550ee",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "calculator",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "soap02",
+			"request": {
+				"url": {
+					"raw": "http://www.dneonline.com/calculator.asmx?wsdl",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dneonline",
+						"com"
+					],
+					"path": [
+						"calculator.asmx"
+					],
+					"query": [
+						{
+							"key": "wsdl",
+							"value": "",
+							"equals": false,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\nxmlns:tem=\"http://tempuri.org/\">>\n    <soap:Header>\n        <soap12:Upgrade xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n            <soap12:SupportedEnvelope qname=\"soap:Envelope\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" />\n            <soap12:SupportedEnvelope qname=\"soap12:Envelope\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\" />\n        </soap12:Upgrade>\n    </soap:Header>\n    <soap:Body>\n        <tem:Add>\n\t\t<tem:intA>10</tem:intA>\n\t\t\t<tem:intB>20</tem:intB>\n\t</tem:Add>\n    </soap:Body>\n</soap:Envelope>"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

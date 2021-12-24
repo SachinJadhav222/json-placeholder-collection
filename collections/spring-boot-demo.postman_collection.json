@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spring-boot-demo",
+		"_postman_id": "219e504e-e70d-ee9e-a960-e4e2b39cd924",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01.Geeting",
+			"request": {
+				"url": "http://localhost:8090/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "02.topics",
+			"request": {
+				"url": "http://localhost:8090/topics",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "03.topics-id",
+			"request": {
+				"url": "http://localhost:8091/topics/9911",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "04.post-topics-id",
+			"request": {
+				"url": "http://localhost:8091/topics",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"9911\",\r\n  \"name\": \"New Spring ring123##\",\r\n  \"description\": \"Postman request crested##\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "06.put-topics",
+			"request": {
+				"url": "http://localhost:8091/topics/9911",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": \"9933\",\n        \"name\": \"Spring9933\",\n        \"description\": \"updated feamework -- Spring boot framework=9933\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "07.delete-.topics",
+			"request": {
+				"url": "http://localhost:8091/topics/9922",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

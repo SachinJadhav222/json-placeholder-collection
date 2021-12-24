@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "37623e01-741d-4e4c-8ea9-dc63842b50e3",
+		"name": "ToolsQA-Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "openWeather-01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q={city-name}&appid={API-key}",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{city-name}"
+						},
+						{
+							"key": "appid",
+							"value": "{API-key}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
